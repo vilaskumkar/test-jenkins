@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="tempApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+	<header></header>
+	<main ng-controller="tempApp.getBears.controller">
+		<div class="container-fluid">
+			<div class="row">
+				<h3 class="text-center">Sign Up</h3>
+				<div class="col-md-4 col-md-offset-4">
+					<form>
+						<div class="form-group">
+							<label for="">Name</label>
+							<input type="text" class="form-control" id="" placeholder="name" value="name" data-ng-model="bear.name">
+						</div>
+						<div class="form-group">
+							<label for="">shortName</label>
+							<input type="text" class="form-control" id="" placeholder="shortName" value="shortName" data-ng-model="bear.shortName">
+						</div>
+						<div class="form-group">
+							<label for="">subName</label>
+							<input type="text" class="form-control" id="" placeholder="subName" value="subName" data-ng-model="bear.subName">
+						</div>
+						<div class="form-group">
+							<label for="">city</label>
+							<input type="text" class="form-control" id="" placeholder="city" value="city" data-ng-model="bear.city">
+						</div>
+						<div class="form-group">
+							<label for="">state</label>
+							<input type="text" class="form-control" id="" placeholder="state" value="state" data-ng-model="bear.state">
+						</div>
+						<div class="form-group">
+							<label for="">country</label>
+							<input type="text" class="form-control" id="" placeholder="country" value="country" data-ng-model="bear.country">
+						</div>
+						<button type="button" class="btn btn-default" data-ng-click="createBear(bear)">Submit</button>
+					</form>
+				</div>
+			</div>
+			<a href="" class="btn btn-default" data-ng-click="export2excel()">Export All BEARS</a>
+		</div>
+	</main>
+	<footer></footer>
+	<script src="/assets/angular/angular.js"></script>
+	<script src="/assets/jquery/dist/jquery.js"></script>
+	<script src="/assets/app.controller.js"></script>
+</body>
+</html>
