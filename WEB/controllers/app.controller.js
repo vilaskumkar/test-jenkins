@@ -51,14 +51,6 @@ angular.module('tempApp', [])
 				url: api + 'bears',
 				data : bear
 			});
-			/*
-			var tempCount = 20000;
-			for (var i = 0; i < tempCount; i++) {
-				if (i == tempCount) {
-					alert(tempCount + ' record(s) inserted !!!');
-				}
-			}
-			*/
 		}
 
 
