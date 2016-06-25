@@ -39,7 +39,7 @@ var path = require('path');
 
 
 var mongoose   = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/tempTW'); // connect to our database
+mongoose.connect('mongodb://192.168.10.62:27000/tempTW'); // connect to our database
 
 var Bear    		  = require('./models/bear');
 var CFSOrg 			  = require('./models/CFSOrganization');
