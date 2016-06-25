@@ -1,0 +1,14 @@
+{
+  "name": "mean-ui-layer",
+  "description": "",
+  "main": "app.js",
+  "license": "MIT",
+  "homepage": "inde.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
