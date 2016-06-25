@@ -48,7 +48,7 @@ var CFSOrg 			  = require('./models/CFSOrganization');
 app.use(bodyParser.urlencoded({extended:true,limit:1024*1024*20,type:'application/x-www-form-urlencoding'}));
 app.use(bodyParser.json({limit:1024*1024*20, type:'application/json'}));
 
-var port = process.env.PORT || 9998;        // set our port
+var port = process.env.PORT || 9001;        // set our port
 
 // ROUTES FOR OUR API
 // =============================================================================
