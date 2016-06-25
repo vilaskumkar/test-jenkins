@@ -3,12 +3,15 @@ angular.module('tempApp', [])
 		$scope.export2excel = getAllBears;
 		$scope.createBear = createBear;
 
+		var apiPath = 'http://192.168.10.62:9998/';
+		var api = apiPath + 'api/';
+
 		function getAllBears(bearsData){
 			console.log('start');
 			console.time();
 			$http({
 				method: 'GET',
-				url: 'http://localhost:9998/api/bears'
+				url: api + 'bears'
 			}).then(function successCallback(response) {
 				// debugger;
 				bearsData = response.data;
@@ -25,13 +28,13 @@ angular.module('tempApp', [])
 			// debugger;
 			$http({
 				method: 'POST',
-				url: 'http://localhost:9998/api/export',
+				url: api + 'export',
 				data : bearsData
 			}).then(function successCallback(response) {
 				// debugger;
 				console.log('end');
 				console.timeEnd();
-				window.open('http://localhost:9998/downloadFile/' + response.data.csvFile);
+				window.open(apiPath + 'downloadFile/' + response.data.csvFile);
 
 			// this callback will be called asynchronously
 			// when the response is available
@@ -45,7 +48,7 @@ angular.module('tempApp', [])
 		function createBear(bear) {
 			$http({
 				method: 'POST',
-				url: 'http://localhost:9998/api/bears',
+				url: api + 'bears',
 				data : bear
 			});
 			/*
